@@ -1,0 +1,24 @@
+PODS:
+  - ZFPlayer (3.2.12):
+    - ZFPlayer/Core (= 3.2.12)
+  - ZFPlayer/AVPlayer (3.2.12):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.2.12):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.12)
+
+DEPENDENCIES:
+  - ZFPlayer
+  - ZFPlayer/AVPlayer
+  - ZFPlayer/ControlView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  ZFPlayer: fdc92702cc611922182a951991dea78566da7605
+
+PODFILE CHECKSUM: 8f1646e7a3ddf9904b5cc5ab09b3771e64d56fcf
+
+COCOAPODS: 1.7.5

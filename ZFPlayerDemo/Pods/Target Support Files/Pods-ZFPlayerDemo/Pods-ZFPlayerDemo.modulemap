@@ -1,0 +1,6 @@
+framework module Pods_ZFPlayerDemo {
+  umbrella header "Pods-ZFPlayerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
