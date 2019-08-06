@@ -84,6 +84,7 @@ class ZFNoramlViewController: UIViewController {
         //设置播放器
         setPlayerProperty()
     }
+
     
     ///视图将要出现的时候调用
     override func viewWillAppear(_ animated: Bool) {
@@ -135,6 +136,7 @@ class ZFNoramlViewController: UIViewController {
 extension ZFNoramlViewController{
     
     private func setUI(){
+        view.backgroundColor = UIColor.white
         view.addSubview(containerView)
         containerView.addSubview(playBtn)
         view.addSubview(changeBtn)

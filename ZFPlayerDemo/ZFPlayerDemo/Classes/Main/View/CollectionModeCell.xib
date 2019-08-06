@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionModeCell" customModule="ZFPlayerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-ic-mfa">
+                        <rect key="frame" x="0.0" y="49" width="251" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="upN-b5-aZH"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ue-YH-PZb">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="普通模式">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="playModeBtnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="PXE-DK-Y50"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0ue-YH-PZb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Ce-8G-iQG"/>
+                <constraint firstItem="dsn-ic-mfa" firstAttribute="top" secondItem="0ue-YH-PZb" secondAttribute="bottom" constant="2" id="6Dc-wh-wkf"/>
+                <constraint firstAttribute="trailing" secondItem="dsn-ic-mfa" secondAttribute="trailing" id="8Tm-Bh-nbq"/>
+                <constraint firstItem="dsn-ic-mfa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NdY-cc-9v0"/>
+                <constraint firstItem="0ue-YH-PZb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UIX-dN-zLf"/>
+                <constraint firstAttribute="trailing" secondItem="0ue-YH-PZb" secondAttribute="trailing" id="ibt-tb-aS3"/>
+                <constraint firstAttribute="bottom" secondItem="dsn-ic-mfa" secondAttribute="bottom" id="yvl-n6-GTs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="251" height="50"/>
+            <connections>
+                <outlet property="playModeBtn" destination="0ue-YH-PZb" id="Dqg-wJ-wIc"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="54.241071428571423"/>
+        </collectionViewCell>
+    </objects>
+</document>

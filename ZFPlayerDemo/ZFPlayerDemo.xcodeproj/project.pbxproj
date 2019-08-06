@@ -15,9 +15,13 @@
 		F3F11C4622F7D37500CC8559 /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C3C22F7D37500CC8559 /* CommonConstant.swift */; };
 		F3F11C4722F7D37500CC8559 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C3D22F7D37500CC8559 /* URLConstant.swift */; };
 		F3F11C4822F7D37500CC8559 /* ZFNoramlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C3F22F7D37500CC8559 /* ZFNoramlViewController.swift */; };
-		F3F11C4922F7D37500CC8559 /* Normal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F11C4022F7D37500CC8559 /* Normal.storyboard */; };
 		F3F11C4A22F7D37500CC8559 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C4222F7D37500CC8559 /* MainViewController.swift */; };
 		F3F11C4B22F7D37500CC8559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F11C4322F7D37500CC8559 /* Main.storyboard */; };
+		F3F11C5522F81E7D00CC8559 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C5322F81E7D00CC8559 /* CollectionHeaderView.swift */; };
+		F3F11C5622F81E7D00CC8559 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F11C5422F81E7D00CC8559 /* CollectionHeaderView.xib */; };
+		F3F11C5922F8213D00CC8559 /* CollectionModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C5722F8213D00CC8559 /* CollectionModeCell.swift */; };
+		F3F11C5A22F8213D00CC8559 /* CollectionModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F11C5822F8213D00CC8559 /* CollectionModeCell.xib */; };
+		F3F11C5C22F9079500CC8559 /* PlayModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C5B22F9079500CC8559 /* PlayModeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +37,13 @@
 		F3F11C3C22F7D37500CC8559 /* CommonConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
 		F3F11C3D22F7D37500CC8559 /* URLConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		F3F11C3F22F7D37500CC8559 /* ZFNoramlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFNoramlViewController.swift; sourceTree = "<group>"; };
-		F3F11C4022F7D37500CC8559 /* Normal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Normal.storyboard; sourceTree = "<group>"; };
 		F3F11C4222F7D37500CC8559 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F3F11C4422F7D37500CC8559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3F11C5322F81E7D00CC8559 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		F3F11C5422F81E7D00CC8559 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		F3F11C5722F8213D00CC8559 /* CollectionModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModeCell.swift; sourceTree = "<group>"; };
+		F3F11C5822F8213D00CC8559 /* CollectionModeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionModeCell.xib; sourceTree = "<group>"; };
+		F3F11C5B22F9079500CC8559 /* PlayModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayModeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				F3F11C3F22F7D37500CC8559 /* ZFNoramlViewController.swift */,
-				F3F11C4022F7D37500CC8559 /* Normal.storyboard */,
 			);
 			path = Normal;
 			sourceTree = "<group>";
@@ -137,10 +144,39 @@
 		F3F11C4122F7D37500CC8559 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F3F11C4C22F80D5700CC8559 /* Controller */,
+				F3F11C4E22F80D5700CC8559 /* Model */,
+				F3F11C4D22F80D5700CC8559 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3F11C4C22F80D5700CC8559 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				F3F11C4222F7D37500CC8559 /* MainViewController.swift */,
 				F3F11C4322F7D37500CC8559 /* Main.storyboard */,
 			);
-			path = Main;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3F11C4D22F80D5700CC8559 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3F11C5322F81E7D00CC8559 /* CollectionHeaderView.swift */,
+				F3F11C5422F81E7D00CC8559 /* CollectionHeaderView.xib */,
+				F3F11C5722F8213D00CC8559 /* CollectionModeCell.swift */,
+				F3F11C5822F8213D00CC8559 /* CollectionModeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3F11C4E22F80D5700CC8559 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3F11C5B22F9079500CC8559 /* PlayModeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +241,8 @@
 			files = (
 				F3F11C3122F7D15E00CC8559 /* LaunchScreen.storyboard in Resources */,
 				F3F11C4B22F7D37500CC8559 /* Main.storyboard in Resources */,
-				F3F11C4922F7D37500CC8559 /* Normal.storyboard in Resources */,
+				F3F11C5622F81E7D00CC8559 /* CollectionHeaderView.xib in Resources */,
+				F3F11C5A22F8213D00CC8559 /* CollectionModeCell.xib in Resources */,
 				F3F11C2E22F7D15E00CC8559 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +300,11 @@
 				F3F11C4522F7D37500CC8559 /* UIColor-Extension.swift in Sources */,
 				F3F11C4622F7D37500CC8559 /* CommonConstant.swift in Sources */,
 				F3F11C4822F7D37500CC8559 /* ZFNoramlViewController.swift in Sources */,
+				F3F11C5922F8213D00CC8559 /* CollectionModeCell.swift in Sources */,
+				F3F11C5522F81E7D00CC8559 /* CollectionHeaderView.swift in Sources */,
 				F3F11C4722F7D37500CC8559 /* URLConstant.swift in Sources */,
 				F3F11C2722F7D15D00CC8559 /* AppDelegate.swift in Sources */,
+				F3F11C5C22F9079500CC8559 /* PlayModeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
