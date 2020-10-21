@@ -22,6 +22,7 @@
 		F3F11C5922F8213D00CC8559 /* CollectionModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C5722F8213D00CC8559 /* CollectionModeCell.swift */; };
 		F3F11C5A22F8213D00CC8559 /* CollectionModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F11C5822F8213D00CC8559 /* CollectionModeCell.xib */; };
 		F3F11C5C22F9079500CC8559 /* PlayModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C5B22F9079500CC8559 /* PlayModeModel.swift */; };
+		F3F11C6122F980EE00CC8559 /* ZFAutoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11C6022F980EE00CC8559 /* ZFAutoPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F3F11C5722F8213D00CC8559 /* CollectionModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModeCell.swift; sourceTree = "<group>"; };
 		F3F11C5822F8213D00CC8559 /* CollectionModeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionModeCell.xib; sourceTree = "<group>"; };
 		F3F11C5B22F9079500CC8559 /* PlayModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayModeModel.swift; sourceTree = "<group>"; };
+		F3F11C6022F980EE00CC8559 /* ZFAutoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFAutoPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				F3F11C4122F7D37500CC8559 /* Main */,
 				F3F11C3E22F7D37500CC8559 /* Normal */,
+				F3F11C5F22F980CA00CC8559 /* TableView */,
 				F3F11C3922F7D37500CC8559 /* Tools */,
 			);
 			path = Classes;
@@ -178,6 +181,15 @@
 			);
 			path = Model;
 			sourceTree = "<group>";
+		};
+		F3F11C5F22F980CA00CC8559 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F3F11C6022F980EE00CC8559 /* ZFAutoPlayerViewController.swift */,
+			);
+			name = TableView;
+			path = ZFPlayerDemo/Classes/TableView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -300,6 +312,7 @@
 				F3F11C4522F7D37500CC8559 /* UIColor-Extension.swift in Sources */,
 				F3F11C4622F7D37500CC8559 /* CommonConstant.swift in Sources */,
 				F3F11C4822F7D37500CC8559 /* ZFNoramlViewController.swift in Sources */,
+				F3F11C6122F980EE00CC8559 /* ZFAutoPlayerViewController.swift in Sources */,
 				F3F11C5922F8213D00CC8559 /* CollectionModeCell.swift in Sources */,
 				F3F11C5522F81E7D00CC8559 /* CollectionHeaderView.swift in Sources */,
 				F3F11C4722F7D37500CC8559 /* URLConstant.swift in Sources */,

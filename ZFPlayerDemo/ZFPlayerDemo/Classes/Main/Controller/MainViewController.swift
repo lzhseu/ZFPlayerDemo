@@ -8,8 +8,8 @@
 
 import UIKit
 
-private let kPlayModeItemH: CGFloat = 60
-private let kHeaderView: CGFloat = 80
+private let kPlayModeItemH: CGFloat = 50
+private let kHeaderView: CGFloat = 60
 private let kPlayModeCellID = "kPlayModeCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
@@ -106,13 +106,17 @@ extension MainViewController{
     
     private func loadData(){
         //此处的列表数据可写死（不是网络数据）
+        createData(sectionTitle: "播放器样式（PLAYER STYTLE）", itemTitle: "普通样式（Normal Style）", item: ZFNoramlViewController())
+    
+    }
+    
+    private func createData(sectionTitle: String, itemTitle: String, item: UIViewController){
         let playModeSection = PlayModeSectionModel()
-        playModeSection.title = "播放器样式（PLAYER STYTLE）"
+        playModeSection.title = sectionTitle
         let playModeItem = PlayModeItemModel()
-        playModeItem.title = "普通样式（Normal Style）"
-        playModeItem.item = ZFNoramlViewController()
+        playModeItem.title = itemTitle
+        playModeItem.item = item
         playModeSection.modeArr.append(playModeItem)
-        
         playModeModel.append(playModeSection)
     }
 }

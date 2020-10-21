@@ -10,5 +10,6 @@ target 'ZFPlayerDemo' do
 pod 'ZFPlayer'
 pod 'ZFPlayer/ControlView'
 pod 'ZFPlayer/AVPlayer'
+pod 'ZFPlayer/ijkplayer'
 
 end
